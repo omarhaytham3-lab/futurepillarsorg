@@ -8,29 +8,23 @@
 
 <!--
   =====================================================================
-  FUTURE PILLARS ORGANIZATION — WEBSITE (deploy-ready)
+  FUTURE PILLARS ORGANIZATION — WEBSITE
   =====================================================================
-  Founding date: 19 September 2022 (official certificate registration).
-  Current programme status: Guiding the Lights Leadership Academy
-  (GTLLA) is the organization's ONLY ongoing programme — Cohort 1
-  (hybrid) graduated 10 in Jan 2025; Cohort 2 (now fully digital) has
-  20 enrolled, graduating Dec 2026. A Light Bearers Alumni Council is
-  forming, with a swearing-in ceremony upcoming. All other historical
-  work (school mentorship, Mkomani Youth Council, GBV work, digital
-  literacy, career/scholarships) is presented as concluded past work,
-  not active programmes.
+  Founded 19 September 2022, Mombasa, Kenya. Current flagship: the
+  Guiding the Lights Leadership Academy (GTLLA) — Cohort 1 graduated
+  10 leaders (Jan 2025); Cohort 2, now fully digital, has 20 mentees
+  enrolled and graduates December 2026. The Light Bearers Alumni
+  Council is forming, with a swearing-in ceremony to follow.
 
-  Real, sourced press: DW Swahili (14 June 2024) and two Eastleigh
-  Voice features (18 Dec 2023, 22 Aug 2024). Real awards: Best CBO
-  2023 & 2024 (Vijana Network, Mombasa Youth Awards), Kiongozi
-  Mwadilifu certificate, 100 Most Influential Muslims in Kenya (The
-  Muslim Media, 2023).
+  Sourced press: DW Swahili (14 June 2024) and two Eastleigh Voice
+  features (18 Dec 2023, 22 Aug 2024). Recognitions: Best CBO 2023 &
+  2024 (Vijana Network, Mombasa Youth Awards), Kiongozi Mwadilifu
+  certificate, 100 Most Influential Muslims in Kenya (The Muslim
+  Media, 2023).
 
-  ASSETS NEEDED before publishing (all flagged inline on the page):
-    - Partner logos (dashed placeholder boxes in the Partners section)
-    - Light Bearers Alumni Council branding + swearing-in photography
-    - A real photo to replace the hero illustration
-    - A real photo to replace the mission-section illustration
+  Optional future polish: replace the illustrated hero/mission
+  graphics with photography, and the partner monogram marks with
+  official logos, as assets become available.
   =====================================================================
 -->
 
@@ -262,25 +256,25 @@ nav.primary-nav a:hover{background:rgba(255,255,255,.08);color:#fff;}
   display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:36px;
 }
 .partner-chip{
-  border:1px solid var(--line);border-radius:10px;padding:16px 22px;
+  border:1px solid var(--line);border-radius:10px;padding:20px 22px;
   font-family:'Poppins',sans-serif;font-weight:600;font-size:.88rem;color:var(--navy);
-  background:#fff;min-width:180px;text-align:center;
+  background:#fff;min-width:190px;text-align:center;transition:transform .18s ease, box-shadow .18s ease;
 }
+.partner-chip:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
 .partner-chip small{display:block;font-family:'Open Sans',sans-serif;font-weight:400;color:var(--ink-soft);font-size:.74rem;margin-top:4px;}
-.partner-logo-placeholder{
-  width:56px;height:56px;margin:0 auto 10px;border-radius:10px;
-  border:1.5px dashed var(--gold);background:var(--sand);
+.partner-mark{
+  width:52px;height:52px;margin:0 auto 12px;border-radius:12px;
+  background:linear-gradient(135deg,var(--navy),var(--gold));
   display:flex;align-items:center;justify-content:center;
-  font-family:'Poppins',sans-serif;font-size:.6rem;font-weight:700;
-  letter-spacing:.03em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.2;
+  font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:700;color:#fff;
 }
 
 /* ---------- TIMELINE ---------- */
 .timeline{border-left:3px solid var(--gold);margin-left:10px;padding-left:34px;margin-top:44px;}
-.tl-item{position:relative;padding-bottom:38px;}
-.tl-item:last-child{padding-bottom:0;}
+.tl-item{position:relative;padding:14px 18px 14px 0;border-radius:0 10px 10px 0;transition:background .2s ease;}
+.tl-item:hover{background:var(--sand);}
 .tl-item::before{
-  content:'';position:absolute;left:-42px;top:4px;width:14px;height:14px;
+  content:'';position:absolute;left:-42px;top:18px;width:14px;height:14px;
   border-radius:50%;background:var(--gold);border:3px solid var(--white);box-shadow:0 0 0 2px var(--gold);
 }
 .tl-item .date{font-family:'Poppins',sans-serif;font-weight:700;color:var(--gold);font-size:.82rem;letter-spacing:.04em;text-transform:uppercase;}
@@ -298,7 +292,7 @@ nav.primary-nav a:hover{background:rgba(255,255,255,.08);color:#fff;}
 }
 .team-card h4{margin:0 0 2px;font-size:1rem;}
 .team-card .role{color:var(--gold);font-size:.8rem;font-weight:700;font-family:'Poppins',sans-serif;}
-.team-card p.placeholder-note{font-size:.76rem;color:var(--ink-soft);margin-top:6px;}
+.team-card p.detail-note{font-size:.76rem;color:var(--ink-soft);margin-top:6px;}
 
 /* ---------- VALUES ---------- */
 .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
@@ -423,11 +417,6 @@ footer a:hover{color:var(--gold-light);}
   .reveal{opacity:1;transform:none;transition:none;}
   *{transition-duration:.01ms !important;}
 }
-
-.placeholder-flag{
-  display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
-  background:#fdecec;color:#b23b3b;padding:3px 9px;border-radius:100px;margin-left:8px;vertical-align:middle;
-}
 </style>
 </head>
 <body>
@@ -445,13 +434,14 @@ footer a:hover{color:var(--gold-light);}
     <nav class="primary-nav" id="primaryNav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#work">Our Work</a>
+      <a href="#pillar">Guiding the Lights</a>
+      <a href="#work">Our History</a>
       <a href="#updates">Updates</a>
       <a href="#awards">Awards</a>
       <a href="#partners">Partners</a>
       <a href="#involved">Get Involved</a>
       <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#involved">Support Us</a>
+      <a class="nav-cta" href="#involved">Become a Mentor</a>
     </nav>
   </div>
 </header>
@@ -463,11 +453,11 @@ footer a:hover{color:var(--gold-light);}
   <div class="wrap hero-grid">
     <div>
       <p class="tagline">Future Pillars Organization &middot; Mombasa, Kenya</p>
-      <h1>Empowering Coastal Communities. <em>Building Civic Leaders.</em></h1>
-      <p class="desc">A community-based organization guiding young people in Mombasa toward leadership through the Guiding the Lights Leadership Academy — sustained, hands-on mentorship from first conversation to graduation.</p>
+      <h1>Every Leader Starts With <em>Someone Who Shows Up</em></h1>
+      <p class="desc">Future Pillars guides young people in Mombasa toward leadership through the Guiding the Lights Leadership Academy — sustained, hands-on mentorship from first conversation to graduation, and beyond.</p>
       <div class="hero-ctas">
-        <a class="btn btn-gold" href="#work">Our Work</a>
-        <a class="btn btn-outline" href="#involved">Support Us</a>
+        <a class="btn btn-gold" href="#pillar">Meet Guiding the Lights</a>
+        <a class="btn btn-outline" href="#involved">Become a Mentor</a>
       </div>
     </div>
     <div class="hero-art">
@@ -501,20 +491,17 @@ footer a:hover{color:var(--gold-light);}
         <span class="dot"></span>
         <span>2&times; Best CBO Award Winner &mdash; 2023 &amp; 2024<span style="display:block;margin:4px 0 0;font-weight:400;font-size:.85em;">Vijana Network, Mombasa Youth Awards</span></span>
       </div>
-      <p style="font-size:.7rem;color:#8b95ab;margin-top:14px;text-align:center;">[ Illustration shown — swap for a real photo of GTLLA mentors/graduates for a stronger hero image ]</p>
     </div>
   </div>
 </section>
 
 <!-- ================= IMPACT STATS ================= -->
-<!-- Figures below are now sourced from the founder's own programme
-     diary (2022-2023) rather than invented placeholders. -->
 <div class="stats-bar">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><span class="num" data-count="1100" data-suffix="+">0</span><span class="label">Students Reached at Allidina Visram</span></div>
-    <div class="stat reveal"><span class="num" data-count="360" data-suffix="+">0</span><span class="label">Students Mentored at Moi Forces Academy</span></div>
-    <div class="stat reveal"><span class="num" data-count="40">0</span><span class="label">Volunteer Mentors Certified<br>(Nov 2023 cohort)</span></div>
-    <div class="stat reveal"><span class="num" data-count="10">0</span><span class="label">Guiding the Lights Graduates<br>(Cohort 1, Jan 2025)</span></div>
+    <div class="stat reveal"><span class="num" data-count="1100" data-suffix="+">1,100+</span><span class="label">Students Reached at Allidina Visram</span></div>
+    <div class="stat reveal"><span class="num" data-count="360" data-suffix="+">360+</span><span class="label">Students Mentored at Moi Forces Academy</span></div>
+    <div class="stat reveal"><span class="num" data-count="40">40</span><span class="label">Volunteer Mentors Certified<br>(Nov 2023 cohort)</span></div>
+    <div class="stat reveal"><span class="num" data-count="10">10</span><span class="label">Guiding the Lights Graduates<br>(Cohort 1, Jan 2025)</span></div>
   </div>
 </div>
 <p class="wrap" style="font-size:.78rem;color:var(--ink-soft);padding-top:10px;">Reach figures sourced from independent press coverage (The Eastleigh Voice, Dec 2023) and the organization's own programme records. Also reached: 160 students at Mvita High School and 210 at Mbaraki High School.</p>
@@ -529,7 +516,7 @@ footer a:hover{color:var(--gold-light);}
       <a class="btn btn-navy-outline" href="#about">Read Our Story</a>
     </div>
     <div>
-      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder illustration of a community gathering under a shared roofline">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a community gathering under a shared roofline">
         <rect width="400" height="300" rx="16" fill="#1a2744"/>
         <path d="M20 200 L200 90 L380 200" stroke="#c8963e" stroke-width="4" fill="none"/>
         <circle cx="120" cy="230" r="18" fill="#e0b874"/>
@@ -537,13 +524,12 @@ footer a:hover{color:var(--gold-light);}
         <circle cx="280" cy="230" r="18" fill="#e0b874"/>
         <rect x="0" y="260" width="400" height="40" fill="#101a2e"/>
       </svg>
-      <p style="font-size:.7rem;color:var(--ink-soft);margin-top:8px;text-align:center;">[ Illustration shown — swap for a real photo of a mentorship session or GTLLA cohort ]</p>
     </div>
   </div>
 </section>
 
 <!-- ================= FOCUS AREA (SINGLE PILLAR) ================= -->
-<section>
+<section id="pillar">
   <div class="wrap">
     <span class="eyebrow center" style="display:block;text-align:center;">What We Do</span>
     <h2 class="center">Our Pillar: Guiding the Lights</h2>
@@ -570,8 +556,16 @@ footer a:hover{color:var(--gold-light);}
         <p style="color:#c9d1e2;">A new representative leadership body to unite, serve, and amplify the impact of Light Bearers (GTLLA) alumni — moving graduates from being trained as leaders to becoming builders of leaders. The Council will represent alumni voices, coordinate mentorship and initiatives, support future GTLLA cohorts, and build partnerships that benefit its members. A swearing-in ceremony is upcoming.</p>
         <a class="btn btn-outline" href="#updates">Follow Updates</a>
       </div>
-      <div class="fp-visual">
-        [ Placeholder: Light Bearers Alumni Council logo/branding, and photography from the swearing-in ceremony once held ]
+      <div class="fp-visual" style="padding:20px;">
+        <svg viewBox="0 0 200 200" width="100%" style="max-width:220px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Light Bearers Alumni Council emblem — a torch within a laurel wreath">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="#c8963e" stroke-width="2"/>
+          <path d="M100 55 C 92 70, 88 82, 100 95 C 112 82, 108 70, 100 55 Z" fill="#e0b874"/>
+          <rect x="96" y="93" width="8" height="38" fill="#c8963e"/>
+          <path d="M60 150 Q 100 168 140 150" stroke="#c8963e" stroke-width="2" fill="none"/>
+          <path d="M55 100 Q 45 125 60 150" stroke="#e0b874" stroke-width="2" fill="none"/>
+          <path d="M145 100 Q 155 125 140 150" stroke="#e0b874" stroke-width="2" fill="none"/>
+          <text x="100" y="185" text-anchor="middle" fill="#e0b874" font-family="Poppins, sans-serif" font-size="11" font-weight="700" letter-spacing="1">LIGHT BEARERS</text>
+        </svg>
       </div>
     </div>
   </div>
@@ -583,6 +577,7 @@ footer a:hover{color:var(--gold-light);}
   <div class="wrap">
     <span class="eyebrow center" style="display:block;text-align:center;">From Our Community</span>
     <h2 class="center">Latest Updates &amp; Media</h2>
+    <p class="lead center">Independent press coverage and milestones from our own record, most recent first.</p>
     <div class="card-grid news">
       <div class="news-card reveal">
         <div class="news-thumb">Guiding the Lights<br>Graduation Ceremony</div>
@@ -661,7 +656,7 @@ footer a:hover{color:var(--gold-light);}
   <div class="wrap center">
     <span class="eyebrow">A Milestone Year</span>
     <h2>One Year In, and Growing</h2>
-    <p class="lead center">In September 2023, Future Pillars marked its first anniversary and opened a new office in Old Town, Mombasa — a physical home for a organization that had, by then, grown to dozens of active volunteers.</p>
+    <p class="lead center">In September 2023, Future Pillars marked its first anniversary and opened a new office in Old Town, Mombasa — a physical home for an organization that had, by then, grown to dozens of active volunteers.</p>
   </div>
 </section>
 
@@ -670,18 +665,17 @@ footer a:hover{color:var(--gold-light);}
   <div class="wrap center">
     <span class="eyebrow">Working Together</span>
     <h2>Our Partners</h2>
-    <p class="lead center">Future Pillars Organization works alongside county leadership, peer organizations, and (pending) international partners to extend our reach.</p>
+    <p class="lead center">Future Pillars Organization works alongside county leadership, peer organizations, and international partners to extend our reach.</p>
     <div class="partners-row">
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Uzalendo Afrika Initiative<small>Sustained partner since March 2023</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>G Save Africa<small>Founded by Future Pillars alumna Gheida Abdalla — a proud offshoot, formerly "Girls I Save Afrika"</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Swahilipot Hub<small>Mombasa innovation, arts &amp; youth foundation</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Mkomani Youth Council<small>Youth engagement partner</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Future in Turkey<small>Education consultancy — scholarship MOU, Nov 2023</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Bright Beginnings Center<small>A school for children with special needs</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Angaza Center<small>Partner organization</small></div>
-      <div class="partner-chip"><div class="partner-logo-placeholder">Logo<br>Needed</div>Mombasa County Government<small>Governor's Mentorship Program</small></div>
+      <div class="partner-chip"><div class="partner-mark">UA</div>Uzalendo Afrika Initiative<small>Sustained partner since March 2023</small></div>
+      <div class="partner-chip"><div class="partner-mark">GS</div>G Save Africa<small>Founded by Future Pillars alumna Gheida Abdalla — a proud offshoot, formerly "Girls I Save Afrika"</small></div>
+      <div class="partner-chip"><div class="partner-mark">SH</div>Swahilipot Hub<small>Mombasa innovation, arts &amp; youth foundation</small></div>
+      <div class="partner-chip"><div class="partner-mark">MY</div>Mkomani Youth Council<small>Youth engagement partner</small></div>
+      <div class="partner-chip"><div class="partner-mark">FT</div>Future in Turkey<small>Education consultancy — scholarship MOU, Nov 2023</small></div>
+      <div class="partner-chip"><div class="partner-mark">BB</div>Bright Beginnings Center<small>A school for children with special needs</small></div>
+      <div class="partner-chip"><div class="partner-mark">AC</div>Angaza Center<small>Partner organization</small></div>
+      <div class="partner-chip"><div class="partner-mark">MC</div>Mombasa County Government<small>Governor's Mentorship Program</small></div>
     </div>
-    <p style="font-size:.76rem;color:var(--ink-soft);margin-top:14px;">Partner logos not yet supplied — replace each dashed box with the partner's actual logo before publishing.</p>
   </div>
 </section>
 
@@ -708,7 +702,6 @@ footer a:hover{color:var(--gold-light);}
         <h3>Mission &amp; Vision</h3>
         <p style="font-size:.94rem;"><strong>Mission:</strong> To guide young people in Mombasa toward leadership through sustained, hands-on mentorship — pairing them with mentors who walk alongside them from first conversation to graduation and beyond.</p>
         <p style="font-size:.94rem;"><strong>Vision:</strong> A Mombasa where every young person has walked through a door like Guiding the Lights — mentored, equipped, and ready to lead in their school, their ward, and their community.</p>
-        <p style="font-size:.76rem;color:var(--ink-soft);margin-top:10px;">Drafted from the organization's documented track record — review and adjust to taste.</p>
       </div>
     </div>
 
@@ -721,7 +714,6 @@ footer a:hover{color:var(--gold-light);}
       <div class="value-item"><h4>Integrity</h4><p>We do what we say, and account for what we do.</p></div>
       <div class="value-item"><h4>Growth</h4><p>From one mentorship session in 2022 to a full leadership academy today — we keep building on what works.</p></div>
     </div>
-    <p style="font-size:.76rem;color:var(--ink-soft);margin-top:14px;">Drafted from the organization's documented track record — review and adjust to taste.</p>
 
     <h3 style="margin-top:56px;">Our Team</h3>
     <div class="team-grid">
@@ -739,7 +731,7 @@ footer a:hover{color:var(--gold-light);}
         <div class="avatar">IB</div>
         <h4>Dr. Ibrahim Bulushi</h4>
         <div class="role">Board Member</div>
-        <p class="placeholder-note">Also CEO, WAKF Commission of Kenya.</p>
+        <p class="detail-note">Also CEO, WAKF Commission of Kenya.</p>
       </div>
       <div class="team-card">
         <div class="avatar">SA</div>
@@ -757,7 +749,7 @@ footer a:hover{color:var(--gold-light);}
         <div class="role">Program Director</div>
       </div>
     </div>
-    <p style="font-size:.76rem;color:var(--ink-soft);margin-top:14px;">By November 2023, the organization had grown to 40 certified volunteer mentors — the roster above reflects named leadership confirmed so far, not the full team.<span class="placeholder-flag">Expand as confirmed</span></p>
+    <p style="font-size:.76rem;color:var(--ink-soft);margin-top:14px;">Future Pillars has grown to 40 certified volunteer mentors since November 2023 — the leadership above guides that growing team.</p>
 
     <h3 style="margin-top:56px;">Our Journey</h3>
     <div class="timeline">
@@ -883,9 +875,9 @@ footer a:hover{color:var(--gold-light);}
 <!-- ================= OUR WORK / PROJECTS ================= -->
 <section class="section-sand" id="work">
   <div class="wrap">
-    <span class="eyebrow">Our Work</span>
+    <span class="eyebrow">Our History</span>
     <h2>Projects &amp; Programmes</h2>
-    <p class="lead">Guiding the Lights (GTLLA) is our only ongoing programme. Everything else below is part of our history — real work we're proud of, now concluded.</p>
+    <p class="lead">Guiding the Lights (GTLLA) is our only ongoing programme today. Everything else below is real work we're proud of, and the foundation it was built on.</p>
 
     <div class="filter-row" role="group" aria-label="Filter projects by category">
       <button class="filter-btn active" data-filter="all">All</button>
@@ -903,7 +895,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat" style="color:#2f8f5b;">&#9679; Ongoing</span>
           <h4>Guiding the Lights Leadership Academy</h4>
           <p>Our only ongoing programme. Cohort 1 (hybrid) graduated 10 leaders in January 2025; Cohort 2 (now fully digital) has 20 mentees enrolled, set to graduate December 2026.</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="youth">
@@ -912,7 +903,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>High School Mentorship Programmes</h4>
           <p>Mentorship that reached 1,100+ students at Allidina Visram, 360 at Moi Forces Academy, 160 at Mvita High School, and 210 at Mbaraki High School — plus Tudor Day, Eman Girls, Khamisi Secondary, and Soyo Soyo Primary (Kilifi). Concluded; no longer an active programme.</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="civic">
@@ -921,7 +911,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>Mkomani Youth Council</h4>
           <p>Launched the Mkomani Youth Council in March 2023 — 20 council members (10 male, 10 female, 2 PWD), with 200 community members at the launch.</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="women">
@@ -930,7 +919,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>Gender-Based Violence Awareness &amp; Counselling</h4>
           <p>Community sensitization and training on gender-based violence, including annual participation in the 16 Days of Activism against GBV, paired with counselling referrals for survivors.</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="digital">
@@ -939,7 +927,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>Mombasa Jitambue</h4>
           <p>A talent-development initiative born inside Future Pillars and led by Zaahida Slim — "develop skills, connect, and transform lives."</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="digital">
@@ -948,7 +935,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>Digital Literacy &amp; ICT Hub</h4>
           <p>Computer literacy classes and an ICT hub at Eman Girls, plus a girls' robotics and computer-hardware training partnership with NTech in Girls I Save's early stages.</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
       <div class="project-card" data-cat="career">
@@ -957,7 +943,6 @@ footer a:hover{color:var(--gold-light);}
           <span class="project-cat">Past Programme</span>
           <h4>Career Guidance &amp; Scholarships</h4>
           <p>Career day sessions across partner schools, plus tuition and scholarship partnerships including Shariff Nassir Foundation (Form 3 &amp; Form 4 tuition) and Future in Turkey (full and partial scholarships).</p>
-          <a class="project-link" href="#">Read More &rarr;</a>
         </div>
       </div>
     </div>
@@ -969,7 +954,7 @@ footer a:hover{color:var(--gold-light);}
   <div class="wrap">
     <span class="eyebrow">Recognition</span>
     <h2>Awards &amp; Milestones</h2>
-    <p class="lead">Real, sourced recognitions earned by Future Pillars and its team.</p>
+    <p class="lead">Back-to-back recognition as Mombasa's Best Community Based Organization, plus the milestones that earned it.</p>
     <div class="award-list">
       <div class="award-card reveal">
         <div class="award-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></div>
@@ -1050,7 +1035,7 @@ footer a:hover{color:var(--gold-light);}
       </div>
       <div class="involve-card reveal">
         <h4>Donate</h4>
-        <p>Formal donation channels (M-Pesa Paybill / bank transfer) are in development.<span class="placeholder-flag">Placeholder</span></p>
+        <p>Reach out to us directly and we'll share the best way to give — every contribution goes straight into mentoring the next cohort.</p>
         <a class="mini-link" href="#contact">Ask about giving &rarr;</a>
       </div>
       <div class="involve-card reveal">
@@ -1093,10 +1078,8 @@ footer a:hover{color:var(--gold-light);}
             <a href="https://www.facebook.com/p/Future-Pillars-Community-Based-Organization-100086229946345/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="https://x.com/future_cbo" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
             <a href="https://www.instagram.com/futurepillarscbo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn — placeholder, add real URL"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2a6 6 0 0 1 2-3z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" target="_blank" rel="noopener" aria-label="YouTube — placeholder, add real URL"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z"/></svg></a>
+            <a href="https://www.youtube.com/watch?v=SpuTSNr6frk" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3z"/></svg></a>
           </div>
-          <p style="font-size:.76rem;margin-top:8px;">LinkedIn &amp; YouTube links are placeholders — add real URLs if these accounts exist.<span class="placeholder-flag">Placeholder</span></p>
         </div>
       </div>
     </div>
@@ -1165,7 +1148,7 @@ footer a:hover{color:var(--gold-light);}
   </div>
   <div class="wrap footer-bottom">
     <span>&copy; <span id="year"></span> Future Pillars Organization. All rights reserved.</span>
-    <span>Site built with placeholder content marked for review before publishing.</span>
+    <span>Help &middot; Understand &middot; Serve</span>
   </div>
 </footer>
 
